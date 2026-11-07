@@ -511,6 +511,7 @@ class UniversalReader {
         this.bookAuthor = bookData.author;
         this.bookTitleEl.textContent = this.bookTitle;
         this.bookAuthorEl.textContent = this.bookAuthor;
+        document.title = `${this.bookTitle} — ${this.bookAuthor}`;
         this.bookContent.innerHTML = bookData.content;
         this.bookContent.style.display = 'block';
 
